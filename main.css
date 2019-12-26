@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+}
+body{
+    background: lemonchiffon;
+}
+
+html {
+    display: table;
+    margin: auto;
+    background-color: lightblue;
+    
+}
+li {
+    color: darkgoldenrod;
+}
+a {
+    color: darkgoldenrod;   
+}
+body {
+    display: table-cell;
+    vertical-align: -webkit-baseline-middle;
+}
+h1 {
+ color:coral;
+}
+ul {
+    align-self:"center";
+}
+form {
+    align:"center";
+}
+
+div{
+    color:dimgrey;
+    align-content: center;
+}
+input:hover{
+    background-color: yellow;
+}
+
