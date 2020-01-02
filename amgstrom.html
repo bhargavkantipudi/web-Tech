@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>amgstrong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script>
+    var input = document.getElementById("inp");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("button").click();
+  }
+});
+    function calc(){
+            console.log(document.getElementById("inp").value)
+            val=document.getElementById("inp").value
+            count=0
+            sum=0
+            count=val.length
+            console.log(count)
+        for(i=val;i>0;i=Math.floor(i/10)){
+                console.log(i)
+                sum=sum+Math.pow(i%10,count);
+            }
+            console.log(sum)
+        if(sum==val){
+            window.alert("It is a amgstrom numbere")
+        }
+        else{
+            window.alert("It is a not amgstrom numbere")
+        }
+            document.getElementById("output").value=sum
+        }
+    
+    </script>
+</head>
+<body>
+    <h1>amgstrong</h1>
+    <input type="text" id="inp" required>
+    <br>
+    <input type="button" value='get amstrom' id="button" onclick='calc()'>
+    <br>
+</body>
+</html>

@@ -38,3 +38,15 @@ function calc(){
             break;
     }
 } 
+function equation(val){
+    document.getElementById("display").value+=val;
+}
+function clr(){
+    document.getElementById("display").value=""
+}
+function solve(){
+    equation=document.getElementById("display").value
+    value=eval(equation)
+    console.log(value)
+    document.getElementById("display").value=String(value)
+}

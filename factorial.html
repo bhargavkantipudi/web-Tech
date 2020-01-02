@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Factorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script>
+        function calc(){
+            console.log(document.getElementById("inp").value)
+            val=document.getElementById("inp").value
+            sum=1
+            for(i=val;i>0;i--){
+                sum=sum*i;
+            }
+            document.getElementById("output").value=sum
+        }
+    
+    </script>
+</head>
+<body>
+    <h1>Factorial</h1>
+    <input type="number" id="inp" required>
+    <br>
+    <input type="button" value='get Factorial' onclick='calc()'>
+    <br>
+    <input type="number" id='output' readonly>
+</body>
+</html>
